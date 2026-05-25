@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      SUPABASE_PASSWORD: ${SUPABASE_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend

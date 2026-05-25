@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+*.local
+application-local.properties
+
+# IDE
+.idea/
+.vscode/
+*.iws
+*.iml
+*.ipr
+
+# Build output
+backend/target/
+frontend/dist/
+frontend/dist-ssr/
+
+# Dependencies
+frontend/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code internal
+CLAUDE.md
+SKILL.md
